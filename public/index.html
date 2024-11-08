@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Axyl Carefoot-Schulz, an aspiring software developer with expertise in software development, data-driven applications, and systems programming.">
     <title>Axyl Carefoot-Schulz - Software Developer</title>
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="./styles/tw.css" />
@@ -11,38 +10,42 @@
     <!-- Favicon (optional) -->
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans leading-normal tracking-normal flex flex-col min-h-screen">
+<body class="bg-gray-100 text-gray-800 font-sans leading-normal tracking-normal">
 
     <!-- Header -->
-    <header class="bg-white shadow py-6">
+    <header>
         <div class="container mx-auto text-center">
             <h1 class="text-4xl font-bold">Axyl Carefoot-Schulz</h1>
             <p class="mt-2 text-lg">Aspiring Software Developer & Data Enthusiast</p>
-            <nav class="flex justify-center space-x-4 mt-4">
-                <a href="https://axyl-casc.github.io/" class="underline hover:text-blue-500">Home</a>
-                <a href="https://github.com/axyl-casc" class="underline hover:text-blue-500">GitHub</a>
-                <a href="https://www.linkedin.com/in/axyl-schulz-7b3024200" class="underline hover:text-blue-500">LinkedIn</a>
-            </nav>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://axyl-casc.github.io/" class="underline">Home</a>
+                <a href="https://github.com/axyl-casc" class="underline">GitHub</a>
+                <a href="https://www.linkedin.com/in/axyl-schulz-7b3024200" class="underline">LinkedIn</a>
+            </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="flex-grow container mx-auto px-4 py-8">
+    <main>
         <!-- About Section -->
-        <section class="mb-12">
+        <section>
             <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-            <p class="text-gray-700">
-                I'm a dedicated computer science student at Mount Royal University, set to graduate in 2026. My expertise lies in software development, 
-                data-driven applications, and systems programming. I'm passionate about crafting efficient, scalable solutions and have applied these skills 
-                in various projects, from game development on legacy hardware to advanced data analysis presentations.
+            <p>
+                I'm a dedicated computer science student at Mount Royal University, 
+                set to graduate in 2026. My expertise lies in software development, 
+                data-driven applications, and systems programming.
+                 I'm passionate about crafting efficient, scalable solutions and 
+                 have applied these skills in various projects, 
+                 from game development on legacy hardware to advanced data 
+                 analysis presentations.
             </p>
         </section>
 
         <!-- Technical Skills -->
-        <section class="mb-12">
+        <section>
             <h2 class="text-2xl font-semibold mb-4">Technical Skills</h2>
-            <p class="text-gray-700 mb-4">Proficient in C++, Java, Python, and SQL with a focus on:</p>
-            <ul class="list-disc pl-6 space-y-2">
+            <p>Proficient in C++, Java, Python, and SQL with a focus on:</p>
+            <ul class="list-disc pl-6 space-y-1">
                 <li><strong>Software Development:</strong> Algorithm design, systems programming</li>
                 <li><strong>Data & Visualization:</strong> MySQL, Matplotlib, NumPy</li>
                 <li><strong>Operating Systems:</strong> Linux, Unix, Windows</li>
@@ -51,49 +54,50 @@
         </section>
 
         <!-- Projects -->
-        <section class="mb-12">
+        <section>
             <h2 class="text-2xl font-semibold mb-4">Projects</h2>
             <div class="space-y-6">
-                <a href="https://github.com/axyl-casc/DefenderRemake/tree/main?tab=readme-ov-file#atari-st-game---defender" class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+                <a href="https://github.com/axyl-casc/DefenderRemake/tree/main?tab=readme-ov-file#atari-st-game---defender" class="project-card">
                     <h3 class="font-semibold text-blue-600">Defender Remake on Atari ST</h3>
                     <p class="text-gray-700">Recreated a classic arcade game using C and assembly, leveraging efficient memory management on limited hardware.</p>
                 </a>
-                <a href="https://github.com/axyl-casc/linux-shell?tab=readme-ov-file#linux-shell" class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+                <a href="https://github.com/axyl-casc/linux-shell?tab=readme-ov-file#linux-shell" class="project-card">
                     <h3 class="font-semibold text-blue-600">Linux Shell Development</h3>
                     <p class="text-gray-700">Built a custom shell in C, handling concurrent commands and inter-process communication for a streamlined command-line experience.</p>
                 </a>
-                <a href="https://github.com/axyl-casc/Anscombes_Research?tab=readme-ov-file#anscombes-quartet-research-project" class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+                <a href="https://github.com/axyl-casc/Anscombes_Research?tab=readme-ov-file#anscombes-quartet-research-project" class="project-card">
                     <h3 class="font-semibold text-blue-600">Anscombe's Quartet Research</h3>
                     <p class="text-gray-700">Created a program to replicate Anscombe's Quartet, emphasizing the importance of visual data analysis.</p>
                 </a>
-                <a href="./other_projects.html" class="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+
+                <a href="./other_projects.html" class="project-card">
                     <h3 class="font-semibold text-blue-600">Other Projects</h3>
                     <p class="text-gray-700">Explore additional projects, including software tools, data visualizations, and experimental applications.</p>
                 </a>
+                
             </div>
         </section>
 
         <!-- Experience -->
-        <section class="mb-12">
+        <section>
             <h2 class="text-2xl font-semibold mb-4">Experience</h2>
-            <div class="space-y-6">
+            <div class="space-y-4">
                 <div>
-                    <h3 class="font-semibold text-lg">Programming Tutor, Launch Pad Learning</h3>
-                    <p class="text-gray-700">Guided students in programming fundamentals, designed hands-on coding activities, and fostered problem-solving skills.</p>
+                    <h3 class="font-semibold">Programming Tutor, Launch Pad Learning</h3>
+                    <p>Guided students in programming fundamentals, designed hands-on coding activities, and fostered problem-solving skills.</p>
                 </div>
                 <div>
-                    <h3 class="font-semibold text-lg">Mover & IT Support, Darwin's Moving & Deliveries</h3>
-                    <p class="text-gray-700">Managed technical setup for clients and provided hardware/software support, developing strong troubleshooting skills.</p>
+                    <h3 class="font-semibold">Mover & IT Support, Darwins Moving & Deliveries</h3>
+                    <p>Managed technical setup for clients and provided hardware/software support, developing strong troubleshooting skills.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-4">
+    <footer>
         <p>&copy; 2024 Axyl Carefoot-Schulz</p>
     </footer>
-
 </body>
 </html>
 
