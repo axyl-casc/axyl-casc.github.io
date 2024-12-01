@@ -1,2 +1,2 @@
 # axyl-casc.github.io
-[Link](https://www.axyl-casc.github.io).
+[Link](https://axyl-casc.github.io).
