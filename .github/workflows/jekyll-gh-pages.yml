@@ -34,7 +34,11 @@ jobs:
       # Build CSS with Tailwind and PostCSS
       - name: Build Tailwind CSS
         run: npx tailwindcss -i ./src/styles/input.css -o ./public/styles/tw.css --minify
-
+        # Copy JavaScript files to public directory
+      - name: Process and Copy JavaScript
+        run: |
+          mkdir -p ./public/js
+          cp -r ./src/js/* ./public/js/
       # Optional: Run your custom build script if needed
       - name: Run build script
         run: npm run build
