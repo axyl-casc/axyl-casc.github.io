@@ -7,10 +7,10 @@
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="./styles/tw.css" />
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans leading-normal tracking-normal min-h-screen flex flex-col">
+<body class="bg-gray-100 text-gray-800 font-sans leading-normal tracking-normal">
 
     <!-- Header -->
-    <header class="bg-white shadow p-4">
+    <header>
         <div class="container mx-auto text-center">
             <h1 class="text-4xl font-bold">Projects</h1>
             <p class="mt-2 text-lg">Explore my other projects.</p>
@@ -22,45 +22,42 @@
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="flex-grow">
-        <div class="container mx-auto p-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <!-- Example Project Card -->
-                <a href="https://axyl-casc.github.io/Varini/" class="project-card">
-                    <h3 class="font-semibold text-blue-600">Varini - Aboriginal Studies Game</h3>
-                    <p class="text-gray-700">
-                        Experience the perspective of Varini, exploring core concepts of Aboriginal life and beliefs. This immersive, simple simulation uses imagination to bridge the gap between gameplay and historical understanding.
-                    </p>
-                </a>
-                <a href="https://axyl-casc.github.io/WebDevelopment/Assignment%202/" class="project-card">
-                    <h3 class="font-semibold text-blue-600">F1 - Race Dashboard</h3>
-                    <p class="text-gray-700">
-                        View different races by season. Save your favourite constructors and drivers as well.
-                    </p>
-                </a>
-                <a href="https://axyl-casc.github.io/Scheduler-Designer/" class="project-card">
-                    <h3 class="font-semibold text-blue-600">CPU Scheduler</h3>
-                    <p class="text-gray-700">
-                        Run different CPU scheduling algorithms interactively and view the results afterwards.
-                    </p>
-                </a>
-                <!-- Add more project cards as needed -->
-                <a href="https://axyl-casc.github.io/igo-ai-ranking/" class="project-card">
-                    <h3 class="font-semibold text-blue-600">Baduk AI Ranking</h3>
-                    <p class="text-gray-700">
-                        The results of a lot of computing AI rankings in igo/baduk.
-                    </p>
-                </a>
-            </div>
+    <!-- Project Cards -->
+    <main>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Example Project Card -->
+            <a href="https://axyl-casc.github.io/Varini/" class="project-card">
+                <h3 class="font-semibold text-blue-600">Varini - Aboriginal Studies Game</h3>
+                <p class="text-gray-700">
+                    Experience the perspective of Varini, exploring core concepts of Aboriginal life and beliefs. This immersive, simple simulation uses imagination to bridge the gap between gameplay and historical understanding.
+                </p>
+            </a>
+            <a href="https://axyl-casc.github.io/WebDevelopment/Assignment%202/" class="project-card">
+                <h3 class="font-semibold text-blue-600">F1 - Race Dashboard</h3>
+                <p class="text-gray-700">
+                    View different races by season. Save your favourite constructors and drivers as well. 
+                </p>
+            </a>
+            <a href="https://axyl-casc.github.io/Scheduler-Designer/" class="project-card">
+                <h3 class="font-semibold text-blue-600">CPU Scheduler</h3>
+                <p class="text-gray-700">
+                    Run different CPU scheduling algorithms interactively and view the results afterwards.
+                </p>
+            </a>
+            <!-- Add more project cards as needed -->
+            <a href=" https://axyl-casc.github.io/igo-ai-ranking/" class="project-card">
+                <h3 class="font-semibold text-blue-600">Baduk AI Ranking</h3>
+                <p class="text-gray-700">
+                    The results of a lot of computing AI rankings in igo/baduk.
+                </p>
+            </a>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center p-4">
+    <footer class="absolute inset-x-0 bottom-0">
         <p>&copy; 2024 Axyl Carefoot-Schulz</p>
     </footer>
-
 </body>
 </html>
 
