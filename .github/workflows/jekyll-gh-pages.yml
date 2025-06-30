@@ -31,17 +31,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Build CSS with Tailwind and PostCSS
+      # Build CSS with Tailwind
       - name: Build Tailwind CSS
-        run: npx tailwindcss -i ./src/styles/input.css -o ./public/styles/tw.css --minify
-        # Copy JavaScript files to public directory
-      - name: Process and Copy JavaScript
+        run: npm run build:css
+      # Copy JavaScript files to public directory
+      - name: Copy React files
         run: |
           mkdir -p ./public/js
           cp -r ./src/js/* ./public/js/
-      # Optional: Run your custom build script if needed
-      - name: Run build script
-        run: npm run build
 
       # Upload the site files as an artifact
       - name: Upload artifact
