@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Start Website",
+      "command": "npm",
+      "args": ["start"],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
