@@ -4,7 +4,7 @@
 
 /* Custom classes */
 header {
-    @apply bg-gray-900 text-white p-8;
+    @apply bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-700 text-white p-8 rounded-b-lg shadow-lg;
 }
 
 main {
@@ -16,5 +16,5 @@ footer {
 }
 
 .project-card {
-    @apply block p-4 bg-white rounded border border-gray-300 shadow hover:bg-gray-100 hover:border-blue-600 transition;
+    @apply block p-4 bg-white rounded border border-gray-300 shadow hover:bg-gray-100 hover:border-blue-600 transform hover:-translate-y-1 hover:shadow-lg transition;
 }
