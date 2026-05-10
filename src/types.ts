@@ -13,3 +13,13 @@ export type Project = {
   section: 'featured' | 'other';
   tags: string[];
 };
+
+
+export type Hobby = {
+  slug: string;
+  title: string;
+  description: string;
+  hobbyUrl: string;
+  section: 'featured' | 'other';
+  tags: string[];
+};

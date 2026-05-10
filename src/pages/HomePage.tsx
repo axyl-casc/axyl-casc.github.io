@@ -2,7 +2,7 @@ import type { CSSProperties } from 'react';
 import { CardGrid } from '../components/CardGrid';
 import { Section } from '../components/Section';
 import { experienceItems } from '../experience';
-import { hobbies } from '../hobbies';
+import { featuredHobbies } from '../hobbiesCards';
 import { featuredProjects } from '../projectsCards';
 import { getTagHue } from '../utils/tagColors';
 
@@ -175,7 +175,7 @@ export function HomePage() {
 
       <div className="divider my-1"></div>
 
-      <CardGrid items={hobbies} />
+      <CardGrid items={featuredHobbies} />
     </div>
   </div>
 </Section>
