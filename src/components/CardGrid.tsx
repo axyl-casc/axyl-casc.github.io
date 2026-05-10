@@ -13,9 +13,14 @@ export function CardGrid({ items, grid = false }: { items: CardItem[]; grid?: bo
             {item.tags && item.tags.length > 0 && (
               <div className="card-actions pt-2">
                 {item.tags.map((tag) => (
-                  <div key={tag} className="badge tag-badge" style={{ '--tag-hue': getTagHue(tag) } as CSSProperties}>
+                  <a
+                    key={tag}
+                    href={`/tags/${encodeURIComponent(tag.toLowerCase())}`}
+                    className="badge tag-badge hover:opacity-80 transition-opacity"
+                    style={{ '--tag-hue': getTagHue(tag) } as CSSProperties}
+                  >
                     {tag}
-                  </div>
+                  </a>
                 ))}
               </div>
             )}

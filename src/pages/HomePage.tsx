@@ -142,16 +142,16 @@ export function HomePage() {
                 <p key={detail}>{detail}</p>
               ))}
               <div className="card-actions pt-2">
-                {item.tags.map((tag, index) => (
+                {item.tags.map((tag) => (
                   <div
                     key={tag}
                     className={[
                       'badge',
                       'tag-badge'
                     ].join(' ').trim()}
-                    style={{ '--tag-hue': getTagHue(`${item.title}-${index}-${tag}`) } as CSSProperties}
+                    style={{ '--tag-hue': getTagHue(tag) } as CSSProperties}
                   >
-                    {tag}
+                    <a href={`/tags/${encodeURIComponent(tag.toLowerCase())}`}>{tag}</a>
                   </div>
                 ))}
               </div>
