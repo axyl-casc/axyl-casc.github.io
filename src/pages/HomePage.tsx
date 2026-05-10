@@ -8,7 +8,7 @@ import { getTagHue } from '../utils/tagColors';
 
 export function HomePage() {
   return (
-    <main className="site-main space-y-16">
+    <main id="main-content" className="site-main space-y-16" tabIndex={-1}>
 <Section title="About Me">
   <div className="card bg-base-200 shadow-md">
     <div className="card-body space-y-4">
