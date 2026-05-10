@@ -17,8 +17,8 @@ export const educationItems: EducationItem[] = [
   },
   {
     title: 'Robert Thirsk High School',
-    meta: '2015 – 2018',
-    details: ['Robotics club and science club.'],
+    meta: 'Graduated Grade 12 · June 2018 · Calgary, AB',
+    details: ['Completed Computer Science, Robotics, and Mathematics to the 30 level.', 'Participated in robotics club and science club.'],
     tags: ['Robotics', 'Science Club']
   },
   {
