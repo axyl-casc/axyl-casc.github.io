@@ -149,8 +149,10 @@ This repository name suggests GitHub Pages hosting (`axyl-casc.github.io`).
 Typical deployment flow:
 
 1. Build the app with `npm run build`
-2. Publish the `dist/` output to your hosting target (for GitHub Pages, this is often via Actions or a `gh-pages` branch)
+2. Publish the `dist/` output to your hosting target (for GitHub Pages, this repository now includes `.github/workflows/deploy.yml` to automate that on every push to `main`)
 
+> Important: GitHub Pages must publish the compiled `dist/` output, not the raw source files. If Pages serves `src/main.tsx` directly, browsers will reject it with a strict MIME-type module error.
+>
 > If you deploy under a subpath instead of the root domain, ensure Vite `base` and link/path handling are configured appropriately.
 
 ---
