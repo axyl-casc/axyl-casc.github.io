@@ -90,16 +90,20 @@
   }
 
   .content-card {
-    @apply border border-base-content/10 shadow-md rounded-2xl;
+    @apply border border-base-content/10 shadow-md rounded-2xl text-base-content;
     background-color: hsl(var(--b1) / 0.78);
     backdrop-filter: blur(6px);
   }
 
-  a.content-card:hover {
+  .content-card:hover {
     @apply shadow-xl;
     border-color: hsl(var(--p) / 0.35);
     outline: none;
     box-shadow: var(--tw-shadow);
+  }
+
+  .card-link-overlay {
+    @apply absolute inset-0 rounded-2xl;
   }
 
   .section-title {
