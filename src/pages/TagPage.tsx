@@ -40,13 +40,17 @@ export function TagPage({ tag }: { tag: string }) {
 
   return (
     <main id="main-content" className="site-main flex-1 space-y-4" tabIndex={-1}>
-      <h2 className="text-2xl font-bold">Tagged: {tag}</h2>
-      <p className="text-base-content/80">Found {items.length} related {items.length === 1 ? 'link' : 'links'}.</p>
-      {items.length > 0 ? (
-        <CardGrid items={items} grid />
-      ) : (
-        <div className="alert alert-info">No links found for this tag yet.</div>
-      )}
+      <section className="card content-card">
+        <div className="card-body space-y-4">
+          <h2 className="text-2xl font-bold">Tagged: {tag}</h2>
+          <p className="text-base-content/80">Found {items.length} related {items.length === 1 ? 'link' : 'links'}.</p>
+          {items.length > 0 ? (
+            <CardGrid items={items} grid />
+          ) : (
+            <div className="alert alert-info">No links found for this tag yet.</div>
+          )}
+        </div>
+      </section>
     </main>
   );
 }
