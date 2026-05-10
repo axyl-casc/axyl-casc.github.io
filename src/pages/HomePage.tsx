@@ -9,7 +9,7 @@ import { getTagHue } from '../utils/tagColors';
 export function HomePage() {
   return (
     <main id="main-content" className="site-main space-y-16" tabIndex={-1}>
-<Section id="about-me" title="About Me">
+<Section id="about-me" title="About Me" description="Background, focus areas, and interests in software and applied AI.">
   <div className="card content-card">
     <div className="card-body space-y-4">
       <p>
@@ -54,7 +54,7 @@ export function HomePage() {
     </div>
   </div>
 </Section>
-<Section id="technical-skills" title="Technical Skills">
+<Section id="technical-skills" title="Technical Skills" description="Core technologies, engineering strengths, and practical development experience.">
   <div className="card content-card">
     <div className="card-body gap-6">
       <div className="space-y-3">
@@ -237,7 +237,7 @@ export function HomePage() {
   </div>
 </Section>
 
-<Section id="projects" title="Projects">
+<Section id="projects" title="Projects" description="Featured work across AI, web development, systems programming, and visualization.">
   <div className="card content-card">
     <div className="card-body space-y-4">
       <p>
@@ -252,7 +252,7 @@ export function HomePage() {
     </div>
   </div>
 </Section>
-<Section id="experience" title="Experience">
+<Section id="experience" title="Experience" description="Professional and teaching experience with a focus on communication and delivery.">
   <div className="card content-card">
     <div className="card-body space-y-6">
       <p>
@@ -296,7 +296,7 @@ export function HomePage() {
 
       <hr className="border-neutral-300" />
 
-<Section id="hobbies" title="Hobbies">
+<Section id="hobbies" title="Hobbies" description="Interests outside software that emphasize strategy, focus, and steady growth.">
   <div className="card content-card">
     <div className="card-body space-y-4">
       <p>
