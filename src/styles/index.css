@@ -20,8 +20,8 @@
 
   .header-shell {
     @apply max-w-6xl text-center px-6 py-8 rounded-3xl border;
-    background-color: hsl(var(--b1) / 0.2);
-    border-color: hsl(var(--b1) / 0.3);
+    background-color: #ffffff;
+    border-color: hsl(var(--b1) / 0.4);
     backdrop-filter: blur(14px);
   }
 
