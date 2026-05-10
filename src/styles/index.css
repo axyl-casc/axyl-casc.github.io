@@ -98,10 +98,17 @@
 
   .section-title {
     @apply text-2xl font-semibold mb-4 inline-block;
-    background: linear-gradient(90deg, hsl(var(--p)), hsl(var(--s)), hsl(var(--a)));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: hsl(var(--bc));
+  }
+
+  @supports ((-webkit-background-clip: text) or (background-clip: text)) {
+    .section-title {
+      background: linear-gradient(90deg, hsl(var(--p)), hsl(var(--s)), hsl(var(--a)));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
   }
 
   .tag-badge {
