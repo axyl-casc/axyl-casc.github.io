@@ -43,64 +43,172 @@ export function HomePage() {
     </div>
   </div>
 </Section>
-
 <Section id="technical-skills" title="Technical Skills">
-  <div className="card bg-base-200 shadow-md">
-    <div className="card-body space-y-4">
-      <p>
-        I have experience with C++, C, Java, Python, SQL, JavaScript, and React,
-        with a focus on building efficient, practical, and maintainable software.
-      </p>
-
+  <div className="card bg-base-200 shadow-xl border border-base-300">
+    <div className="card-body gap-6">
       <div className="space-y-3">
-        <div>
-          <h3 className="font-semibold">Software Development</h3>
-          <p>
-            Algorithm design, system-level programming, data-driven application
-            development, and backend logic.
-          </p>
+        <div className="badge badge-primary badge-lg">Technical Skills</div>
+
+        <p className="text-base-content/80 leading-relaxed max-w-4xl">
+          I have experience with C++, C, Java, Python, SQL, JavaScript, and
+          React, with a focus on building efficient, practical, and maintainable
+          software across web applications, backend systems, databases, applied
+          AI, game development, and research-driven visualization.
+        </p>
+      </div>
+
+      <div className="divider my-0" />
+
+      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <div className="card bg-base-100 border border-base-300 shadow-sm">
+          <div className="card-body">
+            <h3 className="card-title text-base">Programming Languages</h3>
+            <p className="text-sm text-base-content/75">
+              C++, C, Java, Python, SQL, and JavaScript.
+            </p>
+          </div>
         </div>
 
-        <div>
-          <h3 className="font-semibold">Web Development</h3>
-          <p>
-            React, Tailwind CSS, TSX component editing, Quartz 4, Node.js, and
-            Electron.
-          </p>
+        <div className="card bg-base-100 border border-base-300 shadow-sm">
+          <div className="card-body">
+            <h3 className="card-title text-base">Software Development</h3>
+            <p className="text-sm text-base-content/75">
+              Algorithm design, system-level programming, data-driven
+              application development, backend logic, software engineering
+              principles, and maintainable application architecture.
+            </p>
+          </div>
         </div>
 
-        <div>
-          <h3 className="font-semibold">Data &amp; Visualization</h3>
-          <p>
-            MySQL, stored procedures, data integrity management, Matplotlib,
-            NumPy, and SymPy.
-          </p>
+        <div className="card bg-base-100 border border-base-300 shadow-sm">
+          <div className="card-body">
+            <h3 className="card-title text-base">
+              Web &amp; Application Development
+            </h3>
+            <p className="text-sm text-base-content/75">
+              React, Tailwind CSS, TSX component editing, Quartz 4, Node.js,
+              Electron, desktop web apps, advanced web development, interactive
+              UI components, and internal wiki development.
+            </p>
+          </div>
         </div>
 
-        <div>
-          <h3 className="font-semibold">Mathematics &amp; Modelling</h3>
-          <p>
-            Linear algebra, discrete mathematics, calculus, statistics, network
-            science, and mathematical modelling.
-          </p>
+        <div className="card bg-base-100 border border-base-300 shadow-sm">
+          <div className="card-body">
+            <h3 className="card-title text-base">Backend &amp; Databases</h3>
+            <p className="text-sm text-base-content/75">
+              MySQL, database modelling, SQL querying, stored procedures, data
+              integrity management, backend game logic, SQL integration, and
+              database-backed application development.
+            </p>
+          </div>
         </div>
 
-        <div>
-          <h3 className="font-semibold">Teaching &amp; Mentoring</h3>
-          <p>
-            Python, SQL, and Java instruction, curriculum development, and
-            hands-on coding activities.
-          </p>
+        <div className="card bg-base-100 border border-base-300 shadow-sm">
+          <div className="card-body">
+            <h3 className="card-title text-base">Systems Programming</h3>
+            <p className="text-sm text-base-content/75">
+              C programming, assembly language, Linux shell development, process
+              management, inter-process communication, concurrent command
+              execution, memory optimization, and operating systems concepts.
+            </p>
+          </div>
+        </div>
+
+        <div className="card bg-base-100 border border-base-300 shadow-sm">
+          <div className="card-body">
+            <h3 className="card-title text-base">
+              AI, Algorithms &amp; Computer Science
+            </h3>
+            <p className="text-sm text-base-content/75">
+              Applied AI, game AI, explainable AI systems, algorithm design,
+              algorithms and complexity, programming paradigms, computability
+              theory, and human-computer interaction.
+            </p>
+          </div>
+        </div>
+
+        <div className="card bg-base-100 border border-base-300 shadow-sm">
+          <div className="card-body">
+            <h3 className="card-title text-base">
+              Data, Visualization &amp; Scientific Computing
+            </h3>
+            <p className="text-sm text-base-content/75">
+              Matplotlib, NumPy, SymPy, statistical data analysis, research
+              visualization, mathematical modelling, and data-driven application
+              development.
+            </p>
+          </div>
+        </div>
+
+        <div className="card bg-base-100 border border-base-300 shadow-sm">
+          <div className="card-body">
+            <h3 className="card-title text-base">
+              Mathematics &amp; Modelling
+            </h3>
+            <p className="text-sm text-base-content/75">
+              Linear algebra, Linear Algebra II, abstract algebra, discrete
+              mathematics, calculus, mathematical statistics, symbolic logic,
+              network science, and mathematical modelling.
+            </p>
+          </div>
+        </div>
+
+        <div className="card bg-base-100 border border-base-300 shadow-sm">
+          <div className="card-body">
+            <h3 className="card-title text-base">UI / UX &amp; Accessibility</h3>
+            <p className="text-sm text-base-content/75">
+              Human-computer interaction, accessibility-focused UI/UX,
+              neurodivergent-friendly interface design, layout improvement,
+              clear interface design, and technical communication.
+            </p>
+          </div>
+        </div>
+
+        <div className="card bg-base-100 border border-base-300 shadow-sm">
+          <div className="card-body">
+            <h3 className="card-title text-base">Tools &amp; Platforms</h3>
+            <p className="text-sm text-base-content/75">
+              Git, Visual Studio Code, Eclipse, Linux, and Windows.
+            </p>
+          </div>
+        </div>
+
+        <div className="card bg-base-100 border border-base-300 shadow-sm md:col-span-2 xl:col-span-2">
+          <div className="card-body">
+            <h3 className="card-title text-base">Teaching &amp; Mentoring</h3>
+            <p className="text-sm text-base-content/75">
+              Python, SQL, and Java instruction, curriculum development,
+              hands-on coding activities, debugging support, and
+              beginner-friendly technical explanation.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="card-actions">
-        <div className="badge badge-primary">C++</div>
-        <div className="badge badge-primary">Python</div>
-        <div className="badge badge-secondary">React</div>
-        <div className="badge badge-secondary">SQL</div>
-        <div className="badge badge-accent">JavaScript</div>
-        <div className="badge badge-outline">Java</div>
+      <div className="divider my-0">Core Technologies</div>
+
+      <div className="flex flex-wrap gap-2">
+        <div className="badge badge-primary badge-lg">C++</div>
+        <div className="badge badge-primary badge-lg">C</div>
+        <div className="badge badge-primary badge-lg">Python</div>
+
+        <div className="badge badge-secondary badge-lg">React</div>
+        <div className="badge badge-secondary badge-lg">Node.js</div>
+        <div className="badge badge-secondary badge-lg">Electron</div>
+        <div className="badge badge-secondary badge-lg">Tailwind CSS</div>
+
+        <div className="badge badge-accent badge-lg">SQL</div>
+        <div className="badge badge-accent badge-lg">MySQL</div>
+        <div className="badge badge-accent badge-lg">JavaScript</div>
+
+        <div className="badge badge-outline badge-lg">Java</div>
+        <div className="badge badge-outline badge-lg">Git</div>
+        <div className="badge badge-outline badge-lg">Linux</div>
+        <div className="badge badge-outline badge-lg">Assembly</div>
+        <div className="badge badge-outline badge-lg">Matplotlib</div>
+        <div className="badge badge-outline badge-lg">NumPy</div>
+        <div className="badge badge-outline badge-lg">SymPy</div>
       </div>
     </div>
   </div>
