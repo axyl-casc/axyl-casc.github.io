@@ -47,8 +47,6 @@ export function HomePage() {
   <div className="card bg-base-200 shadow-xl border border-base-300">
     <div className="card-body gap-6">
       <div className="space-y-3">
-        <div className="badge badge-primary badge-lg">Technical Skills</div>
-
         <p className="text-base-content/80 leading-relaxed max-w-4xl">
           I have experience with C++, C, Java, Python, SQL, JavaScript, and
           React, with a focus on building efficient, practical, and maintainable
