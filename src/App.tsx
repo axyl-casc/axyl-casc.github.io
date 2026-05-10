@@ -66,12 +66,17 @@ function App() {
     };
   }, [window.location.pathname]);
 
+
+  const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
   const path = window.location.pathname;
-  const isOtherProjects = path.includes('other_projects');
-  const isOtherHobbies = path.includes('other_hobbies');
-  const projectMatch = path.match(/^\/projects\/([^/]+)\/?$/);
-  const hobbyMatch = path.match(/^\/hobbies\/([^/]+)\/?$/);
-  const tagMatch = path.match(/^\/tags\/([^/]+)\/?$/);
+  const normalizedPath = basePath && path.startsWith(basePath)
+    ? path.slice(basePath.length) || '/'
+    : path;
+  const isOtherProjects = normalizedPath.includes('other_projects');
+  const isOtherHobbies = normalizedPath.includes('other_hobbies');
+  const projectMatch = normalizedPath.match(/^\/projects\/([^/]+)\/?$/);
+  const hobbyMatch = normalizedPath.match(/^\/hobbies\/([^/]+)\/?$/);
+  const tagMatch = normalizedPath.match(/^\/tags\/([^/]+)\/?$/);
   const project = projectMatch ? projects.find((item) => item.slug === projectMatch[1]) : undefined;
   const hobby = hobbyMatch ? hobbies.find((item) => item.slug === hobbyMatch[1]) : undefined;
   const tag = tagMatch ? decodeURIComponent(tagMatch[1]) : undefined;
