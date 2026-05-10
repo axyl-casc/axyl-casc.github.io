@@ -70,14 +70,15 @@ export function HomePage() {
       <div className="divider my-0" />
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        <div className="card content-card">
-          <div className="card-body">
-            <h3 className="card-title text-base">Programming Languages</h3>
-            <p className="text-sm text-base-content/75">
-              C++, C, Java, Python, SQL, and JavaScript.
-            </p>
-          </div>
-        </div>
+<div className="card content-card">
+  <div className="card-body">
+    <h3 className="card-title text-base">Programming Languages</h3>
+    <p className="text-sm text-base-content/75">
+      C++, C, C#, Java, Python, SQL, JavaScript, TypeScript, Haskell,
+      Visual Basic, PHP, R, Prolog, HTML, CSS, Bash, and GDScript.
+    </p>
+  </div>
+</div>
 
         <div className="card content-card">
           <div className="card-body">
