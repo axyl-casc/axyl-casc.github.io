@@ -2,8 +2,11 @@ import { useEffect, useState } from 'react';
 import { Layout } from './layouts/Layout';
 import { HomePage } from './pages/HomePage';
 import { OtherProjectsPage } from './pages/OtherProjectsPage';
+import { OtherHobbiesPage } from './pages/OtherHobbiesPage';
 import { ProjectPage } from './pages/ProjectPage';
+import { HobbyPage } from './pages/HobbyPage';
 import { projects } from './projects';
+import { hobbies } from './hobbies';
 
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
@@ -18,8 +21,11 @@ function App() {
 
   const path = window.location.pathname;
   const isOtherProjects = path.includes('other_projects');
+  const isOtherHobbies = path.includes('other_hobbies');
   const projectMatch = path.match(/^\/projects\/([^/]+)\/?$/);
+  const hobbyMatch = path.match(/^\/hobbies\/([^/]+)\/?$/);
   const project = projectMatch ? projects.find((item) => item.slug === projectMatch[1]) : undefined;
+  const hobby = hobbyMatch ? hobbies.find((item) => item.slug === hobbyMatch[1]) : undefined;
 
   if (project) {
     return (
@@ -29,10 +35,26 @@ function App() {
     );
   }
 
+  if (hobby) {
+    return (
+      <Layout title="Hobby" subtitle="Hobby details and links." theme={theme} onThemeChange={setTheme}>
+        <HobbyPage hobby={hobby} />
+      </Layout>
+    );
+  }
+
   if (isOtherProjects) {
     return (
       <Layout title="Projects" subtitle="Explore my other projects." theme={theme} onThemeChange={setTheme}>
         <OtherProjectsPage />
+      </Layout>
+    );
+  }
+
+  if (isOtherHobbies) {
+    return (
+      <Layout title="Hobbies" subtitle="Explore my other hobbies." theme={theme} onThemeChange={setTheme}>
+        <OtherHobbiesPage />
       </Layout>
     );
   }
