@@ -7,7 +7,8 @@ const items: CardItem[] = hobbies
   .map((hobby) => ({
     title: hobby.title,
     href: `/hobbies/${hobby.slug}`,
-    description: hobby.description
+    description: hobby.description,
+    tags: hobby.tags
   }));
 
 export function OtherHobbiesPage() {

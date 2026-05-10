@@ -5,6 +5,7 @@ import { OtherProjectsPage } from './pages/OtherProjectsPage';
 import { OtherHobbiesPage } from './pages/OtherHobbiesPage';
 import { ProjectPage } from './pages/ProjectPage';
 import { HobbyPage } from './pages/HobbyPage';
+import { TagPage } from './pages/TagPage';
 import { projects } from './projects';
 import { hobbies } from './hobbies';
 
@@ -24,8 +25,10 @@ function App() {
   const isOtherHobbies = path.includes('other_hobbies');
   const projectMatch = path.match(/^\/projects\/([^/]+)\/?$/);
   const hobbyMatch = path.match(/^\/hobbies\/([^/]+)\/?$/);
+  const tagMatch = path.match(/^\/tags\/([^/]+)\/?$/);
   const project = projectMatch ? projects.find((item) => item.slug === projectMatch[1]) : undefined;
   const hobby = hobbyMatch ? hobbies.find((item) => item.slug === hobbyMatch[1]) : undefined;
+  const tag = tagMatch ? decodeURIComponent(tagMatch[1]) : undefined;
 
   if (project) {
     return (
@@ -47,6 +50,14 @@ function App() {
     return (
       <Layout title="Projects" subtitle="Explore my other projects." theme={theme} onThemeChange={setTheme}>
         <OtherProjectsPage />
+      </Layout>
+    );
+  }
+
+  if (tag) {
+    return (
+      <Layout title="Tags" subtitle="Explore everything related to a specific tag." theme={theme} onThemeChange={setTheme}>
+        <TagPage tag={tag} />
       </Layout>
     );
   }
