@@ -43,7 +43,7 @@ export function TagPage({ tag }: { tag: string }) {
       <h2 className="text-2xl font-bold">Tagged: {tag}</h2>
       <p className="text-base-content/80">Found {items.length} related {items.length === 1 ? 'link' : 'links'}.</p>
       {items.length > 0 ? (
-        <CardGrid items={items} grid cardClassName="bg-white" />
+        <CardGrid items={items} grid />
       ) : (
         <div className="alert alert-info">No links found for this tag yet.</div>
       )}
