@@ -2,6 +2,7 @@ import type { CSSProperties } from 'react';
 import { CardGrid } from '../components/CardGrid';
 import { Section } from '../components/Section';
 import { experienceItems } from '../experience';
+import { educationItems } from '../education';
 import { featuredHobbies } from '../hobbiesCards';
 import { featuredProjects } from '../projectsCards';
 import { getTagHue } from '../utils/tagColors';
@@ -265,6 +266,48 @@ export function HomePage() {
 
       <div className="space-y-6">
         {experienceItems.map((item) => (
+          <div key={item.title} className="card bg-base-100 shadow-sm">
+            <div className="card-body space-y-2">
+              <h3 className="card-title text-base">{item.title}</h3>
+              <p className="text-sm opacity-70">{item.meta}</p>
+              {item.details.map((detail) => (
+                <p key={detail}>{detail}</p>
+              ))}
+              <div className="card-actions pt-2">
+                {item.tags.map((tag) => (
+                  <div
+                    key={tag}
+                    className={[
+                      'badge',
+                      'tag-badge'
+                    ].join(' ').trim()}
+                    style={{ '--tag-hue': getTagHue(tag) } as CSSProperties}
+                  >
+                    <a href={`/tags/${encodeURIComponent(tag.toLowerCase())}`}>{tag}</a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</Section>
+
+
+<Section id="education" title="Education" description="Academic background, training, and foundational learning experiences.">
+  <div className="card content-card">
+    <div className="card-body space-y-6">
+      <p>
+        Education and training experiences that shaped my technical foundation,
+        communication skills, and long-term interest in software development.
+      </p>
+
+      <div className="divider my-1"></div>
+
+      <div className="space-y-6">
+        {educationItems.map((item) => (
           <div key={item.title} className="card bg-base-100 shadow-sm">
             <div className="card-body space-y-2">
               <h3 className="card-title text-base">{item.title}</h3>
