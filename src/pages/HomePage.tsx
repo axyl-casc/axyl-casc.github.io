@@ -34,11 +34,22 @@ export function HomePage() {
         to both technical and non-technical audiences.
       </p>
 
-      <div className="card-actions">
-        <div className="badge badge-primary">Software Development</div>
-        <div className="badge badge-secondary">Applied AI</div>
-        <div className="badge badge-accent">Game Development</div>
-        <div className="badge badge-outline">Technical Communication</div>
+      <div className="card-actions flex flex-wrap gap-2">
+        {[
+          'Software Development',
+          'Applied AI',
+          'Game Development',
+          'Technical Communication'
+        ].map((tag) => (
+          <a
+            key={tag}
+            href={`/tags/${encodeURIComponent(tag.toLowerCase())}`}
+            className="badge badge-lg tag-badge hover:opacity-80 transition-opacity"
+            style={{ '--tag-hue': getTagHue(tag) } as CSSProperties}
+          >
+            {tag}
+          </a>
+        ))}
       </div>
     </div>
   </div>
