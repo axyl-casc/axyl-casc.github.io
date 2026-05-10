@@ -73,7 +73,7 @@ function App() {
 
   if (hobby) {
     return (
-      <Layout title="Hobby" subtitle="Hobby details and links." theme={theme} onThemeChange={setTheme}>
+      <Layout title="Hobbies" subtitle="Details and links for hobbies." theme={theme} onThemeChange={setTheme}>
         <HobbyPage hobby={hobby} />
       </Layout>
     );
