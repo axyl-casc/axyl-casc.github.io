@@ -85,7 +85,8 @@ export function HomePage() {
             <p className="text-sm text-base-content/75">
               Algorithm design, system-level programming, data-driven
               application development, backend logic, software engineering
-              principles, and maintainable application architecture.
+              principles, object-orientated programming, and maintainable
+              application architecture.
             </p>
           </div>
         </div>
@@ -97,8 +98,8 @@ export function HomePage() {
             </h3>
             <p className="text-sm text-base-content/75">
               React, Tailwind CSS, TSX component editing, Quartz 4, Node.js,
-              Electron, desktop web apps, advanced web development, interactive
-              UI components, and internal wiki development.
+              Flask, Electron, desktop web apps, advanced web development,
+              interactive UI components, and internal wiki development.
             </p>
           </div>
         </div>
@@ -107,9 +108,9 @@ export function HomePage() {
           <div className="card-body">
             <h3 className="card-title text-base">Backend &amp; Databases</h3>
             <p className="text-sm text-base-content/75">
-              MySQL, database modelling, SQL querying, stored procedures, data
-              integrity management, backend game logic, SQL integration, and
-              database-backed application development.
+              MySQL, MariaDB, Microsoft Access, database modelling, SQL querying,
+              stored procedures, data integrity management, backend game logic,
+              SQL integration, and database-backed application development.
             </p>
           </div>
         </div>
@@ -144,9 +145,9 @@ export function HomePage() {
               Data, Visualization &amp; Scientific Computing
             </h3>
             <p className="text-sm text-base-content/75">
-              Matplotlib, NumPy, SymPy, statistical data analysis, research
-              visualization, mathematical modelling, and data-driven application
-              development.
+              Matplotlib, StatCrunch, NumPy, SymPy, statistical data analysis,
+              research visualization, mathematical modelling, and data-driven
+              application development.
             </p>
           </div>
         </div>
@@ -179,7 +180,9 @@ export function HomePage() {
           <div className="card-body">
             <h3 className="card-title text-base">Tools &amp; Platforms</h3>
             <p className="text-sm text-base-content/75">
-              Git, Visual Studio Code, Eclipse, Linux, and Windows.
+              Docker, Git, PyCharm, Eclipse, Android Studio, Panda3D, Linux,
+              Debian, PowerShell, Batch, LaTeX, Microsoft Office, Microsoft
+              Excel, Visual Studio Code, and Windows.
             </p>
           </div>
         </div>
@@ -191,8 +194,8 @@ export function HomePage() {
             <h3 className="card-title text-base">DevOps &amp; Workflow</h3>
             <p className="text-sm text-base-content/75">
               Git-based collaboration, branch-based workflows, code review
-              practices, version control hygiene, and iterative delivery across
-              personal and team projects.
+              practices, version control hygiene, SDLC, unit tests, and
+              iterative delivery across personal and team projects.
             </p>
           </div>
         </div>
