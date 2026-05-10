@@ -14,7 +14,7 @@ export function CardGrid({
   return (
     <div className={grid ? 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6' : 'space-y-6'}>
       {items.map((item) => (
-        <div key={item.href} className={`card content-card transition-all duration-200 ${cardClassName}`.trim()}>
+        <div key={item.href} className={`card content-card content-card--interactive transition-all duration-200 ${cardClassName}`.trim()}>
           <div className="card-body relative">
             <a href={item.href} className="card-link-overlay" aria-label={`Open ${item.title}`} />
             <h3 className="card-title text-base-content">
