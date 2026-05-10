@@ -12,14 +12,14 @@
   input:focus-visible {
     @apply outline outline-2 outline-offset-2 outline-primary;
   }
+.site-header {
+  @apply text-base-content px-6 pt-8 pb-10;
+  background: transparent;
+}
 
-  .site-header {
-    @apply text-base-content px-6 pt-8 pb-10 rounded-b-3xl shadow-sm border-b border-base-300 bg-base-100;
-  }
-
-  .header-shell {
-    @apply max-w-6xl text-center px-6 py-8 rounded-3xl border border-base-300 bg-base-100;
-  }
+.header-shell {
+  @apply max-w-6xl mx-auto text-center px-6 py-8 rounded-3xl border border-base-300 bg-base-100 shadow-sm;
+}
 
   .header-theme-control {
     @apply absolute right-6 top-6;
