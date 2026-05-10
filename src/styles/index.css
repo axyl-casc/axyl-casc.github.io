@@ -102,6 +102,14 @@
     box-shadow: var(--tw-shadow);
   }
 
+  .tag-results-card {
+    background-color: hsl(var(--p) / 0.14);
+  }
+
+  :root[data-theme='dark'] .tag-results-card {
+    background-color: hsl(var(--p) / 0.22);
+  }
+
   .card-link-overlay {
     @apply absolute inset-0 rounded-2xl;
   }
