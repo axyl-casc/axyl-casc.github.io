@@ -39,7 +39,7 @@ export function TagPage({ tag }: { tag: string }) {
   const items = [...projectLinks, ...experienceLinks, ...hobbyLinks];
 
   return (
-    <main id="main-content" className="site-main flex-1 space-y-4" tabIndex={-1}>
+    <main id="main-content" className="site-main flex-1 space-y-4 bg-base-100" tabIndex={-1}>
       <section className="card content-card">
         <div className="card-body space-y-4">
           <h2 className="text-2xl font-bold">Tagged: {tag}</h2>
