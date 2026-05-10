@@ -9,6 +9,7 @@ export function ThemeController({ theme, onChange }: ThemeControllerProps) {
       <input
         type="checkbox"
         value="dark"
+        aria-label="Toggle dark theme"
         className="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1"
         checked={theme === 'dark'}
         onChange={(event) => onChange(event.target.checked ? 'dark' : 'light')}

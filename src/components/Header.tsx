@@ -19,7 +19,7 @@ export function Header({ title, subtitle, links, theme, onThemeChange }: HeaderP
         </div>
         <h1 className="text-4xl font-bold">{title}</h1>
         <p className="mt-2 text-lg">{subtitle}</p>
-        <nav className="flex justify-center space-x-4 mt-4">
+        <nav className="flex justify-center space-x-4 mt-4" aria-label="Primary">
           {links.map((link) => (
             <a key={link.href} href={link.href} className="underline">
               {link.label}

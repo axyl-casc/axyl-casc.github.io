@@ -12,7 +12,7 @@ const items: CardItem[] = projects
 
 export function OtherProjectsPage() {
   return (
-    <main className="site-main flex-1">
+    <main id="main-content" className="site-main flex-1" tabIndex={-1}>
       <CardGrid items={items} grid />
     </main>
   );

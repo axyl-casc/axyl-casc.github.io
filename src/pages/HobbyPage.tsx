@@ -2,7 +2,7 @@ import type { Hobby } from '../types';
 
 export function HobbyPage({ hobby }: { hobby: Hobby }) {
   return (
-    <main className="site-main flex-1">
+    <main id="main-content" className="site-main flex-1" tabIndex={-1}>
       <section className="max-w-3xl mx-auto card bg-base-100 border border-base-300 shadow-sm">
         <div className="card-body space-y-4">
           <h2 className="text-3xl font-bold text-primary">{hobby.title}</h2>

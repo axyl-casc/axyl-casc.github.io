@@ -19,6 +19,7 @@ const links = [
 export function Layout({ title, subtitle, children, theme, onThemeChange }: LayoutProps) {
   return (
     <div className="bg-base-200 text-base-content font-sans leading-normal tracking-normal min-h-screen flex flex-col">
+      <a href="#main-content" className="skip-link">Skip to main content</a>
       <Header title={title} subtitle={subtitle} links={links} theme={theme} onThemeChange={onThemeChange} />
       {children}
       <Footer />
