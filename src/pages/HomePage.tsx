@@ -187,26 +187,34 @@ export function HomePage() {
       <div className="divider my-0">Core Technologies</div>
 
       <div className="flex flex-wrap gap-2">
-        <div className="badge badge-primary badge-lg">C++</div>
-        <div className="badge badge-primary badge-lg">C</div>
-        <div className="badge badge-primary badge-lg">Python</div>
-
-        <div className="badge badge-secondary badge-lg">React</div>
-        <div className="badge badge-secondary badge-lg">Node.js</div>
-        <div className="badge badge-secondary badge-lg">Electron</div>
-        <div className="badge badge-secondary badge-lg">Tailwind CSS</div>
-
-        <div className="badge badge-accent badge-lg">SQL</div>
-        <div className="badge badge-accent badge-lg">MySQL</div>
-        <div className="badge badge-accent badge-lg">JavaScript</div>
-
-        <div className="badge badge-outline badge-lg">Java</div>
-        <div className="badge badge-outline badge-lg">Git</div>
-        <div className="badge badge-outline badge-lg">Linux</div>
-        <div className="badge badge-outline badge-lg">Assembly</div>
-        <div className="badge badge-outline badge-lg">Matplotlib</div>
-        <div className="badge badge-outline badge-lg">NumPy</div>
-        <div className="badge badge-outline badge-lg">SymPy</div>
+        {[
+          'C++',
+          'C',
+          'Python',
+          'React',
+          'Node.js',
+          'Electron',
+          'Tailwind CSS',
+          'SQL',
+          'MySQL',
+          'JavaScript',
+          'Java',
+          'Git',
+          'Linux',
+          'Assembly',
+          'Matplotlib',
+          'NumPy',
+          'SymPy'
+        ].map((tag) => (
+          <a
+            key={tag}
+            href={`/tags/${encodeURIComponent(tag.toLowerCase())}`}
+            className="badge badge-lg tag-badge hover:opacity-80 transition-opacity"
+            style={{ '--tag-hue': getTagHue(tag) } as CSSProperties}
+          >
+            {tag}
+          </a>
+        ))}
       </div>
     </div>
   </div>
