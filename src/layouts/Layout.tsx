@@ -10,13 +10,23 @@ type LayoutProps = {
   onThemeChange: (theme: 'light' | 'dark') => void;
 };
 
-const links = [
+const homeLinks = [
+  { label: 'About me', href: '#about-me' },
+  { label: 'Technical Skills', href: '#technical-skills' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Hobbies', href: '#hobbies' }
+];
+
+const defaultLinks = [
   { label: 'Home', href: '/' },
   { label: 'GitHub', href: 'https://github.com/axyl-casc' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/axyl-carefoot-schulz-7b3024200/' }
 ];
 
 export function Layout({ title, subtitle, children, theme, onThemeChange }: LayoutProps) {
+  const links = window.location.pathname === '/' ? homeLinks : defaultLinks;
+
   return (
     <div className="bg-base-200 text-base-content font-sans leading-normal tracking-normal min-h-screen flex flex-col">
       <a href="#main-content" className="skip-link">Skip to main content</a>
