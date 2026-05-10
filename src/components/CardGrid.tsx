@@ -32,7 +32,7 @@ export function CardGrid({
                 {item.tags.map((tag) => (
                   <a
                     key={tag}
-                    href={`/tags/${encodeURIComponent(tag.toLowerCase())}`}
+                    href={`${import.meta.env.BASE_URL}tags/${encodeURIComponent(tag.toLowerCase())}`}
                     className="badge tag-badge hover:opacity-80 transition-opacity"
                     style={{ '--tag-hue': getTagHue(tag) } as CSSProperties}
                   >

@@ -44,7 +44,7 @@ export function HomePage() {
         ].map((tag) => (
           <a
             key={tag}
-            href={`/tags/${encodeURIComponent(tag.toLowerCase())}`}
+            href={`${import.meta.env.BASE_URL}tags/${encodeURIComponent(tag.toLowerCase())}`}
             className="badge badge-lg tag-badge hover:opacity-80 transition-opacity"
             style={{ '--tag-hue': getTagHue(tag) } as CSSProperties}
           >
@@ -234,7 +234,7 @@ export function HomePage() {
         ].map((tag) => (
           <a
             key={tag}
-            href={`/tags/${encodeURIComponent(tag.toLowerCase())}`}
+            href={`${import.meta.env.BASE_URL}tags/${encodeURIComponent(tag.toLowerCase())}`}
             className="badge badge-lg tag-badge hover:opacity-80 transition-opacity"
             style={{ '--tag-hue': getTagHue(tag) } as CSSProperties}
           >
@@ -291,7 +291,7 @@ export function HomePage() {
                     ].join(' ').trim()}
                     style={{ '--tag-hue': getTagHue(tag) } as CSSProperties}
                   >
-                    <a href={`/tags/${encodeURIComponent(tag.toLowerCase())}`}>{tag}</a>
+                    <a href={`${import.meta.env.BASE_URL}tags/${encodeURIComponent(tag.toLowerCase())}`}>{tag}</a>
                   </div>
                 ))}
               </div>
@@ -333,7 +333,7 @@ export function HomePage() {
                     ].join(' ').trim()}
                     style={{ '--tag-hue': getTagHue(tag) } as CSSProperties}
                   >
-                    <a href={`/tags/${encodeURIComponent(tag.toLowerCase())}`}>{tag}</a>
+                    <a href={`${import.meta.env.BASE_URL}tags/${encodeURIComponent(tag.toLowerCase())}`}>{tag}</a>
                   </div>
                 ))}
               </div>
