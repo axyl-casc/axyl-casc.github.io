@@ -39,7 +39,7 @@ export function TagPage({ tag }: { tag: string }) {
   const items = [...projectLinks, ...experienceLinks, ...hobbyLinks];
 
   return (
-    <main id="main-content" className="site-main flex-1 space-y-4 bg-white dark:bg-black" tabIndex={-1}>
+    <main id="main-content" className="site-main flex-1 space-y-4" tabIndex={-1}>
       <h2 className="text-2xl font-bold">Tagged: {tag}</h2>
       <p className="text-base-content/80">Found {items.length} related {items.length === 1 ? 'link' : 'links'}.</p>
       {items.length > 0 ? (
