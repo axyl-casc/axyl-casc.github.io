@@ -14,6 +14,6 @@ export const featuredHobbies: CardItem[] = [
     title: 'Other Hobbies',
     href: '/other_hobbies',
     description: 'Explore additional hobbies and interests outside of software development.',
-    tags: ['Interests', 'Lifestyle', 'Personal Growth']
+    tags: ['Interests', 'Lifestyle', 'Personal Growth', 'Portfolio']
   }
 ];
