@@ -29,9 +29,16 @@ const defaultLinks = [
 export function Layout({ title, subtitle, children, theme, onThemeChange }: LayoutProps) {
   const links = window.location.pathname === '/' ? homeLinks : defaultLinks;
 
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="site-surface text-base-content font-sans leading-normal tracking-normal min-h-screen flex flex-col">
       <a href="#main-content" className="skip-link">Skip to main content</a>
+      <button type="button" className="scroll-top-button" onClick={handleScrollToTop} aria-label="Scroll to top">
+        ↑ Top
+      </button>
       <Header title={title} subtitle={subtitle} links={links} theme={theme} onThemeChange={onThemeChange} />
       {children}
       <Footer />

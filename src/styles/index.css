@@ -65,6 +65,16 @@
     @apply container mx-auto p-8 space-y-12;
   }
 
+  .scroll-top-button {
+    @apply fixed top-4 right-4 z-50 px-4 py-2 rounded-full font-semibold border border-base-content/20 shadow-md transition-all duration-200;
+    background-color: hsl(var(--b1) / 0.9);
+  }
+
+  .scroll-top-button:hover {
+    @apply -translate-y-0.5 shadow-lg;
+    background-color: hsl(var(--b1) / 1);
+  }
+
   .site-footer {
     @apply p-4 mt-8 text-center border-t border-base-content/15;
     background: linear-gradient(140deg, hsl(var(--n) / 0.95), hsl(var(--p) / 0.55));
