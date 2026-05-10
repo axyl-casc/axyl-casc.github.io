@@ -104,6 +104,13 @@
     background-color: hsl(var(--tag-hue) 75% 90%);
     border: 1px solid hsl(var(--tag-hue) 60% 55% / 0.45);
     color: hsl(var(--tag-hue) 70% 25%);
+    height: auto;
+    min-height: 1.5rem;
+    white-space: normal;
+    line-height: 1.2;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    text-align: center;
   }
 
   :root[data-theme='dark'] .tag-badge {
