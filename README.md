@@ -1,5 +1,4 @@
 # axyl-casc.github.io
-<<<<<<< HEAD
 
 A modern personal portfolio site for **Axyl Carefoot‑Schulz**, built with **React + TypeScript + Vite + Tailwind CSS + DaisyUI**.
 
