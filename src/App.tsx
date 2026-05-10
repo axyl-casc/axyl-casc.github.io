@@ -20,6 +20,29 @@ function App() {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
+
+  useEffect(() => {
+    const scrollToHashTarget = () => {
+      const hash = window.location.hash.replace('#', '');
+
+      if (!hash) {
+        return;
+      }
+
+      requestAnimationFrame(() => {
+        const target = document.getElementById(hash);
+        target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    };
+
+    scrollToHashTarget();
+    window.addEventListener('hashchange', scrollToHashTarget);
+
+    return () => {
+      window.removeEventListener('hashchange', scrollToHashTarget);
+    };
+  }, [window.location.pathname]);
+
   const path = window.location.pathname;
   const isOtherProjects = path.includes('other_projects');
   const isOtherHobbies = path.includes('other_hobbies');
