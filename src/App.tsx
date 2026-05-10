@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Layout } from './layouts/Layout';
 import { HomePage } from './pages/HomePage';
 import { OtherProjectsPage } from './pages/OtherProjectsPage';
+import { ProjectPage } from './pages/ProjectPage';
+import { projects } from './projects';
 
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
@@ -14,7 +16,18 @@ function App() {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  const isOtherProjects = window.location.pathname.includes('other_projects');
+  const path = window.location.pathname;
+  const isOtherProjects = path.includes('other_projects');
+  const projectMatch = path.match(/^\/projects\/([^/]+)\/?$/);
+  const project = projectMatch ? projects.find((item) => item.slug === projectMatch[1]) : undefined;
+
+  if (project) {
+    return (
+      <Layout title="Project" subtitle="Project details and links." theme={theme} onThemeChange={setTheme}>
+        <ProjectPage project={project} />
+      </Layout>
+    );
+  }
 
   if (isOtherProjects) {
     return (
