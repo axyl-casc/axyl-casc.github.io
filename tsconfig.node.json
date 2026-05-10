@@ -7,10 +7,7 @@
     "lib": [
       "ES2020"
     ],
-    "skipLibCheck": true,
-    "types": [
-      "node"
-    ]
+    "skipLibCheck": true
   },
   "include": [
     "vite.config.ts",
