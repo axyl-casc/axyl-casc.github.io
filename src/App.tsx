@@ -31,7 +31,17 @@ function App() {
 
       requestAnimationFrame(() => {
         const target = document.getElementById(hash);
-        target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        if (!target) {
+          return;
+        }
+
+        const collapsibleToggle = target.querySelector<HTMLInputElement>('input[type="checkbox"]');
+        if (collapsibleToggle) {
+          collapsibleToggle.checked = true;
+        }
+
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     };
 
