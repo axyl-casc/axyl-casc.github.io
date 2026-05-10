@@ -23,7 +23,7 @@ export const projects: Project[] = [
     description: 'A GO playing interface designed to teach beginners how to play the game of GO.',
     projectUrl: 'https://zxnashx.itch.io/beginner-go-game',
     section: 'featured',
-    tags: ['Go / Baduk', 'Game Development', 'Education', 'Python', 'JavaScript', 'NodeJS', 'Electron', 'Tailwind CSS', 'Applied AI', 'Software Development']
+    tags: ['Baduk / Go', 'Game Development', 'Education', 'Python', 'JavaScript', 'Node.js', 'Electron', 'Tailwind CSS', 'Applied AI', 'Software Development']
   },
   {
     slug: 'fancy-pants-outfitters-react-demo',
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     description: 'Guess the next best move in a Go game.',
     projectUrl: 'https://goguesser.onrender.com/',
     section: 'other',
-    tags: ['Go / Baduk', 'Puzzle', 'Web App', 'NodeJS', 'Tailwind CSS', 'Game Development', 'Software Development'
+    tags: ['Baduk / Go', 'Puzzle', 'Web App', 'Node.js', 'Tailwind CSS', 'Game Development', 'Software Development'
     ]
   },
   {
@@ -97,6 +97,6 @@ export const projects: Project[] = [
     description: 'Offline-first bookshelf for Go materials, with search, bookmarks, and resume tracking across PDF/SGF/HTML files.',
     projectUrl: 'https://github.com/axyl-casc/GoLibrary',
     section: 'other',
-    tags: ['Offline-first', 'Search', 'Go / Baduk', 'Software Development']
+    tags: ['Offline-first', 'Search', 'Baduk / Go', 'Software Development']
   }
 ];
