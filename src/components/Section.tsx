@@ -1,8 +1,14 @@
 import { ReactNode } from 'react';
 
-export function Section({ title, children }: { title: string; children: ReactNode }) {
+type SectionProps = {
+  title: string;
+  children: ReactNode;
+  id?: string;
+};
+
+export function Section({ title, children, id }: SectionProps) {
   return (
-    <section>
+    <section id={id}>
       <h2 className="text-2xl font-semibold mb-4">{title}</h2>
       {children}
     </section>
