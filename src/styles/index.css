@@ -102,15 +102,6 @@
     box-shadow: var(--tw-shadow);
   }
 
-  .tag-results-card {
-    background-color: hsl(var(--tag-page-hue, var(--p)) 80% 90% / 0.7);
-    border-color: hsl(var(--tag-page-hue, var(--p)) 55% 52% / 0.45);
-  }
-
-  :root[data-theme='dark'] .tag-results-card {
-    background-color: hsl(var(--tag-page-hue, var(--p)) 45% 22% / 0.8);
-    border-color: hsl(var(--tag-page-hue, var(--p)) 70% 62% / 0.4);
-  }
 
   .card-link-overlay {
     @apply absolute inset-0 rounded-2xl;
