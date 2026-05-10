@@ -1,6 +1,7 @@
 import { projects } from '../projects';
 import { hobbies } from '../hobbies';
 import { experienceItems } from '../experience';
+import { educationItems } from '../education';
 import type { CardItem } from '../types';
 import { CardGrid } from '../components/CardGrid';
 
@@ -36,7 +37,16 @@ export function TagPage({ tag }: { tag: string }) {
       tags: item.tags
     }));
 
-  const items = [...projectLinks, ...experienceLinks, ...hobbyLinks];
+  const educationLinks: CardItem[] = educationItems
+    .filter((item) => item.tags.some((itemTag) => matchesTag(itemTag, tag)))
+    .map((item) => ({
+      title: item.title,
+      description: item.meta,
+      href: '/#education',
+      tags: item.tags
+    }));
+
+  const items = [...projectLinks, ...experienceLinks, ...educationLinks, ...hobbyLinks];
 
   return (
     <main id="main-content" className="site-main flex-1 space-y-4 bg-base-100 rounded-2xl" tabIndex={-1}>
