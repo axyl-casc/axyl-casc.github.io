@@ -77,8 +77,8 @@
     background-color: #dbeafe;
   }
 
-  :root[data-theme='dark'] .site-surface {
-    background-color: #9a3412;
+:root[data-theme='dark'] .site-surface {
+    background-color: #b57a2a;
   }
 
   .content-card {
