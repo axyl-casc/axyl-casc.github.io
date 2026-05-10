@@ -7,8 +7,7 @@ const items: CardItem[] = projects
   .map((project) => ({
     title: project.title,
     href: `/projects/${project.slug}`,
-    description: project.description,
-    tags: project.tags
+    description: project.description
   }));
 
 export function OtherProjectsPage() {
