@@ -2,11 +2,19 @@ import type { CSSProperties } from 'react';
 import type { CardItem } from '../types';
 import { getTagHue } from '../utils/tagColors';
 
-export function CardGrid({ items, grid = false }: { items: CardItem[]; grid?: boolean }) {
+export function CardGrid({
+  items,
+  grid = false,
+  cardClassName = ''
+}: {
+  items: CardItem[];
+  grid?: boolean;
+  cardClassName?: string;
+}) {
   return (
     <div className={grid ? 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6' : 'space-y-6'}>
       {items.map((item) => (
-        <a key={item.href} href={item.href} className="card content-card transition-all duration-200">
+        <a key={item.href} href={item.href} className={`card content-card transition-all duration-200 ${cardClassName}`.trim()}>
           <div className="card-body">
             <h3 className="card-title text-primary">{item.title}</h3>
             <p className="text-base-content/80">{item.description}</p>
