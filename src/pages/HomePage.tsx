@@ -196,7 +196,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="card content-card md:col-span-2 xl:col-span-2">
+        <div className="card content-card">
           <div className="card-body">
             <h3 className="card-title text-base">Teaching &amp; Mentoring</h3>
             <p className="text-sm text-base-content/75">
