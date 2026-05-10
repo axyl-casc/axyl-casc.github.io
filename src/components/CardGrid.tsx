@@ -1,4 +1,6 @@
+import type { CSSProperties } from 'react';
 import type { CardItem } from '../types';
+import { getTagHue } from '../utils/tagColors';
 
 export function CardGrid({ items, grid = false }: { items: CardItem[]; grid?: boolean }) {
   return (
@@ -11,7 +13,7 @@ export function CardGrid({ items, grid = false }: { items: CardItem[]; grid?: bo
             {item.tags && item.tags.length > 0 && (
               <div className="card-actions pt-2">
                 {item.tags.map((tag) => (
-                  <div key={tag} className="badge badge-outline">
+                  <div key={tag} className="badge tag-badge" style={{ '--tag-hue': getTagHue(tag) } as CSSProperties}>
                     {tag}
                   </div>
                 ))}
