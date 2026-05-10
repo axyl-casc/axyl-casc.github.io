@@ -14,6 +14,6 @@ export const featuredProjects: CardItem[] = [
     title: 'Other Projects',
     href: '/other_projects',
     description: 'Explore additional projects, including software tools, data visualizations, and experimental applications.',
-    tags: ['Portfolio', 'Navigation']
+    tags: []
   }
 ];
