@@ -10,7 +10,7 @@ export function HomePage() {
   return (
     <main id="main-content" className="site-main space-y-16" tabIndex={-1}>
 <Section id="about-me" title="About Me">
-  <div className="card bg-base-200 shadow-md">
+  <div className="card content-card">
     <div className="card-body space-y-4">
       <p>
         I’m a Computer Science graduate from Mount Royal University with a
@@ -44,7 +44,7 @@ export function HomePage() {
   </div>
 </Section>
 <Section id="technical-skills" title="Technical Skills">
-  <div className="card bg-base-200 shadow-xl border border-base-300">
+  <div className="card content-card">
     <div className="card-body gap-6">
       <div className="space-y-3">
         <p className="text-base-content/80 leading-relaxed max-w-4xl">
@@ -58,7 +58,7 @@ export function HomePage() {
       <div className="divider my-0" />
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        <div className="card bg-base-100 border border-base-300 shadow-sm">
+        <div className="card content-card">
           <div className="card-body">
             <h3 className="card-title text-base">Programming Languages</h3>
             <p className="text-sm text-base-content/75">
@@ -67,7 +67,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="card bg-base-100 border border-base-300 shadow-sm">
+        <div className="card content-card">
           <div className="card-body">
             <h3 className="card-title text-base">Software Development</h3>
             <p className="text-sm text-base-content/75">
@@ -78,7 +78,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="card bg-base-100 border border-base-300 shadow-sm">
+        <div className="card content-card">
           <div className="card-body">
             <h3 className="card-title text-base">
               Web &amp; Application Development
@@ -91,7 +91,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="card bg-base-100 border border-base-300 shadow-sm">
+        <div className="card content-card">
           <div className="card-body">
             <h3 className="card-title text-base">Backend &amp; Databases</h3>
             <p className="text-sm text-base-content/75">
@@ -102,7 +102,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="card bg-base-100 border border-base-300 shadow-sm">
+        <div className="card content-card">
           <div className="card-body">
             <h3 className="card-title text-base">Systems Programming</h3>
             <p className="text-sm text-base-content/75">
@@ -113,7 +113,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="card bg-base-100 border border-base-300 shadow-sm">
+        <div className="card content-card">
           <div className="card-body">
             <h3 className="card-title text-base">
               AI, Algorithms &amp; Computer Science
@@ -126,7 +126,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="card bg-base-100 border border-base-300 shadow-sm">
+        <div className="card content-card">
           <div className="card-body">
             <h3 className="card-title text-base">
               Data, Visualization &amp; Scientific Computing
@@ -139,7 +139,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="card bg-base-100 border border-base-300 shadow-sm">
+        <div className="card content-card">
           <div className="card-body">
             <h3 className="card-title text-base">
               Mathematics &amp; Modelling
@@ -152,7 +152,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="card bg-base-100 border border-base-300 shadow-sm">
+        <div className="card content-card">
           <div className="card-body">
             <h3 className="card-title text-base">UI / UX &amp; Accessibility</h3>
             <p className="text-sm text-base-content/75">
@@ -163,7 +163,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="card bg-base-100 border border-base-300 shadow-sm">
+        <div className="card content-card">
           <div className="card-body">
             <h3 className="card-title text-base">Tools &amp; Platforms</h3>
             <p className="text-sm text-base-content/75">
@@ -172,7 +172,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="card bg-base-100 border border-base-300 shadow-sm md:col-span-2 xl:col-span-2">
+        <div className="card content-card md:col-span-2 xl:col-span-2">
           <div className="card-body">
             <h3 className="card-title text-base">Teaching &amp; Mentoring</h3>
             <p className="text-sm text-base-content/75">
@@ -221,7 +221,7 @@ export function HomePage() {
 </Section>
 
 <Section id="projects" title="Projects">
-  <div className="card bg-base-200 shadow-md">
+  <div className="card content-card">
     <div className="card-body space-y-4">
       <p>
         A selection of projects spanning Go AI tools, interactive learning
@@ -236,7 +236,7 @@ export function HomePage() {
   </div>
 </Section>
 <Section id="experience" title="Experience">
-  <div className="card bg-base-200 shadow-md">
+  <div className="card content-card">
     <div className="card-body space-y-6">
       <p>
         Experience across web development, teaching, technical support, and
@@ -280,7 +280,7 @@ export function HomePage() {
       <hr className="border-neutral-300" />
 
 <Section id="hobbies" title="Hobbies">
-  <div className="card bg-base-200 shadow-md">
+  <div className="card content-card">
     <div className="card-body space-y-4">
       <p>
         Outside of software development, I enjoy hobbies that combine strategy,
