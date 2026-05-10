@@ -38,12 +38,12 @@
   }
 
   .header-nav-link {
-    @apply px-4 py-2 rounded-full font-medium transition-all duration-200 border border-base-content/20;
+    @apply px-4 py-2 rounded-full font-medium transition-all duration-200 border border-base-content/20 shadow-sm;
     background-color: hsl(var(--b1) / 0.14);
   }
 
   .header-nav-link:hover {
-    @apply -translate-y-0.5;
+    @apply -translate-y-0.5 shadow-md;
     background-color: hsl(var(--b1) / 0.25);
   }
 
