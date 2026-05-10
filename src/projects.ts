@@ -15,7 +15,7 @@ export const projects: Project[] = [
     description: 'An interactive documentation site built with Quartz, featuring guides, learning modules, and development notes for Infinite Mind Games projects.',
     projectUrl: 'https://infinite-mind-pictures-inc.github.io/Infinite-Mind-Wiki/',
     section: 'featured',
-    tags: ['React', 'JavaScript', 'Java']
+    tags: ['Quartz', 'Documentation', 'Web Development', 'React', 'JavaScript', 'Java']
   },
   {
     slug: 'beginner-go-ai-game',
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     description: 'A GO playing interface designed to teach beginners how to play the game of GO.',
     projectUrl: 'https://zxnashx.itch.io/beginner-go-game',
     section: 'featured',
-    tags: ['Python', 'JavaScript', 'NodeJS']
+    tags: ['Go / Baduk', 'Game Development', 'Education', 'Python', 'JavaScript', 'NodeJS']
   },
   {
     slug: 'fancy-pants-outfitters-react-demo',
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     description: 'A polished React storefront demo featuring curated fashion for trendsetters, workweek looks, and night-out fits. Highlights include in-stock essentials, modern silhouettes, and standout accessories for individuals, partners, and the whole crew.',
     projectUrl: 'https://acare3.github.io/4513_2_website/',
     section: 'featured',
-    tags: ['TypeScript', 'JavaScript']
+    tags: ['React', 'Frontend', 'E-commerce', 'TypeScript', 'JavaScript']
   },
   {
     slug: 'defender-remake-atari-st',
