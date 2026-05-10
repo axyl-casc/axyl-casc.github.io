@@ -92,6 +92,8 @@
   .content-card:hover {
     @apply shadow-xl;
     border-color: hsl(var(--p) / 0.35);
+    outline: none;
+    box-shadow: var(--tw-shadow);
   }
 
   .section-title {
