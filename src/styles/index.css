@@ -15,7 +15,4 @@
     @apply bg-neutral text-neutral-content p-4 mt-8 text-center;
   }
 
-  .project-card {
-    @apply block p-4 bg-base-100 rounded border border-base-300 shadow hover:bg-base-200 hover:border-primary transform hover:-translate-y-1 hover:shadow-lg transition;
-  }
 }
