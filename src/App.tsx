@@ -15,6 +15,19 @@ function App() {
     return stored === 'dark' ? 'dark' : 'light';
   });
 
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const redirectedPath = params.get('p');
+
+    if (!redirectedPath) {
+      return;
+    }
+
+    const decodedPath = decodeURIComponent(redirectedPath);
+    window.history.replaceState(null, '', decodedPath);
+  }, []);
+
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
