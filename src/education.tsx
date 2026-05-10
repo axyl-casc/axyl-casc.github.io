@@ -10,8 +10,8 @@ export const educationItems: EducationItem[] = [
     title: 'Bachelor of Science – Computer Science',
     meta: 'Mount Royal University · September 2020 – May 2026 · Calgary, AB',
     details: [
-      'Cumulative GPA: 3.23 / 4.0.',
-      'Math cognate and Go AI final project.'
+      'Program GPA: 3.3 / 4.0.',
+      'Graduate of Mount Royal University with a degree in Computer Science and a Mathematics cognate focused on statistics, network science, and analytical problem-solving. Experienced in research-driven projects, including data analysis presentations at MRU Research Days and the Alberta Mathematics Dialogue, alongside applied AI, web development, and game development work. Completed a senior project focused on developing a Go AI, with a strong interest in building transparent, well-engineed systems that connect theoretical concepts with practical software applications.'
     ],
     tags: ['Computer Science', 'Mathematics', 'Go AI']
   },
