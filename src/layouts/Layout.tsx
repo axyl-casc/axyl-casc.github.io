@@ -15,6 +15,7 @@ const homeLinks = [
   { label: 'Technical Skills', href: '#technical-skills' },
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Education', href: '#education' },
   { label: 'Hobbies', href: '#hobbies' },
   { label: 'GitHub', href: 'https://github.com/axyl-casc' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/axyl-carefoot-schulz-7b3024200/' }
