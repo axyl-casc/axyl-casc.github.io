@@ -143,11 +143,13 @@ export function HomePage() {
         <div className="card content-card">
           <div className="card-body">
             <h3 className="card-title text-base">
-              Data, Visualization &amp; Scientific Computing
+              Data, Scientific Computing &amp; Mathematical Modelling
             </h3>
             <p className="text-sm text-base-content/75">
               Matplotlib, StatCrunch, NumPy, SymPy, statistical data analysis,
-              research visualization, mathematical modelling, and data-driven
+              research visualization, linear algebra, abstract algebra, discrete
+              mathematics, calculus, mathematical statistics, symbolic logic,
+              network science, and mathematical modelling for data-driven
               application development.
             </p>
           </div>
@@ -155,13 +157,13 @@ export function HomePage() {
 
         <div className="card content-card">
           <div className="card-body">
-            <h3 className="card-title text-base">
-              Mathematics &amp; Modelling
-            </h3>
+            <h3 className="card-title text-base">AI / LLM</h3>
             <p className="text-sm text-base-content/75">
-              Linear algebra, Linear Algebra II, abstract algebra, discrete
-              mathematics, calculus, mathematical statistics, symbolic logic,
-              network science, and mathematical modelling.
+              Daily AI-assisted development workflows focused primarily on OpenAI
+              Codex for planning, implementation, refactoring, and rapid
+              prototyping, with additional experience using Claude and OpenClaw
+              for cross-model validation, prompt comparison, and iterative
+              software delivery.
             </p>
           </div>
         </div>
