@@ -1,28 +1,8 @@
 import { CardGrid } from '../components/CardGrid';
 import { Section } from '../components/Section';
-import { projects } from '../projects';
-import type { CardItem } from '../types';
-
-const featuredProjects: CardItem[] = [
-  ...projects
-    .filter((project) => project.section === 'featured')
-    .map((project) => ({
-      title: project.title,
-      href: `/projects/${project.slug}`,
-      description: project.description
-    })),
-  {
-    title: 'Other Projects',
-    href: '/other_projects',
-    description: 'Explore additional projects, including software tools, data visualizations, and experimental applications.'
-  }
-];
-
-const hobbies: CardItem[] = [
-  { title: 'Baduk / GO', href: 'https://online-go.com/user/view/1071783', description: 'I enjoy studying and playing GO (Baduk), from tactical puzzles to longer, strategic games online.' },
-  { title: 'Rock Climbing', href: 'https://www.instagram.com/axyl.sc/', description: 'Bouldering and climbing help me stay active, solve movement problems, and keep improving technique.' },
-  { title: 'Bird Watching', href: 'https://ebird.org/profile/Nzc4Nzg0NQ', description: 'I like tracking sightings, identifying species, and exploring local habitats through birding.' }
-];
+import { experienceItems } from '../experience';
+import { hobbies } from '../hobbies';
+import { featuredProjects } from '../projectsCards';
 
 export function HomePage() {
   return (
@@ -136,13 +116,6 @@ export function HomePage() {
       <div className="divider my-1"></div>
 
       <CardGrid items={featuredProjects} />
-
-      <div className="card-actions">
-        <div className="badge badge-primary">Go / Baduk</div>
-        <div className="badge badge-secondary">Web Development</div>
-        <div className="badge badge-accent">Systems Programming</div>
-        <div className="badge badge-outline">Data Visualization</div>
-      </div>
     </div>
   </div>
 </Section>
@@ -158,97 +131,33 @@ export function HomePage() {
       <div className="divider my-1"></div>
 
       <div className="space-y-6">
-        <div className="card bg-base-100 shadow-sm">
-          <div className="card-body space-y-2">
-            <h3 className="card-title text-base">
-              Web Development Intern
-            </h3>
-
-            <p className="text-sm opacity-70">
-              Infinite Mind Pictures Inc. · June 2025 – September 2025 ·
-              Calgary, AB
-            </p>
-
-            <p>
-              Helped lead the development of an internal wiki using Quartz 4, a
-              React-based framework, to improve organization, communication, and
-              resource sharing across the team. My work included refining visual
-              design, improving user experience, editing custom TSX components,
-              and building a clearer structure for team knowledge and support
-              resources.
-            </p>
-
-            <p>
-              I also created a resource portal for Infinite Mind’s
-              neurodivergent community and partners, with an emphasis on
-              accessibility, clarity, and inclusive UI/UX design. Alongside this,
-              I developed a Java programming course for kids using Robocode,
-              designing interactive lessons and activities that introduced core
-              programming concepts through game-based learning.
-            </p>
-
-            <div className="card-actions pt-2">
-              <div className="badge badge-primary">Quartz 4</div>
-              <div className="badge badge-secondary">React</div>
-              <div className="badge badge-accent">UI/UX</div>
-              <div className="badge badge-outline">Education</div>
+        {experienceItems.map((item) => (
+          <div key={item.title} className="card bg-base-100 shadow-sm">
+            <div className="card-body space-y-2">
+              <h3 className="card-title text-base">{item.title}</h3>
+              <p className="text-sm opacity-70">{item.meta}</p>
+              {item.details.map((detail) => (
+                <p key={detail}>{detail}</p>
+              ))}
+              <div className="card-actions pt-2">
+                {item.tags.map((tag, index) => (
+                  <div
+                    key={tag}
+                    className={[
+                      'badge',
+                      index === 0 ? 'badge-primary' : '',
+                      index === 1 ? 'badge-secondary' : '',
+                      index === 2 ? 'badge-accent' : '',
+                      index > 2 ? 'badge-outline' : ''
+                    ].join(' ').trim()}
+                  >
+                    {tag}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="card bg-base-100 shadow-sm">
-          <div className="card-body space-y-2">
-            <h3 className="card-title text-base">
-              Programming Tutor
-            </h3>
-
-            <p className="text-sm opacity-70">
-              Launch Pad Learning · May 2023 – January 2025 · Calgary, AB
-            </p>
-
-            <p>
-              Taught programming fundamentals to students ranging from children
-              to adults, with a focus on Python, SQL, Java, and practical
-              problem-solving. Designed hands-on activities, custom exercises,
-              and coding lessons that helped students build confidence with core
-              programming concepts and best practices.
-            </p>
-
-            <div className="card-actions pt-2">
-              <div className="badge badge-primary">Python</div>
-              <div className="badge badge-secondary">SQL</div>
-              <div className="badge badge-accent">Java</div>
-              <div className="badge badge-outline">Mentoring</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="card bg-base-100 shadow-sm">
-          <div className="card-body space-y-2">
-            <h3 className="card-title text-base">
-              Mover &amp; IT Support
-            </h3>
-
-            <p className="text-sm opacity-70">
-              Darwin’s Moving &amp; Deliveries · July 2018 – August 2020 ·
-              Calgary, AB
-            </p>
-
-            <p>
-              Provided technical setup and troubleshooting support for client
-              devices, company computers, and hardware/software issues. This role
-              strengthened my practical troubleshooting skills, communication,
-              and ability to solve technical problems in real-world environments.
-            </p>
-
-            <div className="card-actions pt-2">
-              <div className="badge badge-primary">IT Support</div>
-              <div className="badge badge-secondary">Troubleshooting</div>
-              <div className="badge badge-accent">Hardware</div>
-              <div className="badge badge-outline">Communication</div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   </div>
@@ -267,13 +176,6 @@ export function HomePage() {
       <div className="divider my-1"></div>
 
       <CardGrid items={hobbies} />
-
-      <div className="card-actions">
-        <div className="badge badge-primary">Baduk / Go</div>
-        <div className="badge badge-secondary">Rock Climbing</div>
-        <div className="badge badge-accent">Bird Watching</div>
-        <div className="badge badge-outline">Strategy</div>
-      </div>
     </div>
   </div>
 </Section>

@@ -8,6 +8,15 @@ export function CardGrid({ items, grid = false }: { items: CardItem[]; grid?: bo
           <div className="card-body">
             <h3 className="card-title text-primary">{item.title}</h3>
             <p className="text-base-content/80">{item.description}</p>
+            {item.tags && item.tags.length > 0 && (
+              <div className="card-actions pt-2">
+                {item.tags.map((tag) => (
+                  <div key={tag} className="badge badge-outline">
+                    {tag}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </a>
       ))}
