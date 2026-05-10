@@ -1,4 +1,5 @@
 # axyl-casc.github.io
+<<<<<<< HEAD
 
 A modern personal portfolio site for **Axyl Carefoot‑Schulz**, built with **React + TypeScript + Vite + Tailwind CSS + DaisyUI**.
 
@@ -181,3 +182,6 @@ Typical deployment flow:
 
 No license file is currently included in this repository.
 If you intend this project to be open source, add a license (for example, MIT) in a `LICENSE` file.
+=======
+[Link](https://axyl-casc.github.io).
+>>>>>>> main
