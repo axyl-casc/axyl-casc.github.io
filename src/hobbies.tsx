@@ -17,6 +17,23 @@ export const hobbies: Hobby[] = [
     section: 'featured',
     tags: ['Bouldering', 'Problem Solving', 'Fitness']
   },
+
+  {
+    slug: 'sports-history',
+    title: 'Sports & Athletics',
+    hobbyUrl: '',
+    description: 'Long-term participation in Calgary minor hockey (Timbits to Midget, 2005–2016), Saracens Rugby (2014), Track Team (2012–2014), and Robert Thirsk Cross Country (2016–2017).',
+    section: 'other',
+    tags: ['Hockey', 'Rugby', 'Track', 'Cross Country']
+  },
+  {
+    slug: 'reading-travel-robotics',
+    title: 'Reading, Travel & Robotics',
+    hobbyUrl: '',
+    description: 'I enjoy reading, travel, robotics tinkering, programming side projects, and new adventures outdoors.',
+    section: 'other',
+    tags: ['Reading', 'Travel', 'Robotics', 'Adventures']
+  },
   {
     slug: 'bird-watching',
     title: 'Bird Watching',

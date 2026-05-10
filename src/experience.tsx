@@ -25,10 +25,19 @@ export const experienceItems: ExperienceItem[] = [
   },
   {
     title: 'Mover & IT Support',
-    meta: 'Darwin’s Moving & Deliveries · July 2018 – August 2020 · Calgary, AB',
+    meta: 'Darwin’s Moving & Deliveries Inc. · 2017 – Present · Calgary, AB',
     details: [
+      'Commercial and residential mover handling packing, loading, unloading, and safe transport of client belongings across Calgary.',
       'Provided technical setup and troubleshooting support for client devices, company computers, and hardware/software issues. This role strengthened my practical troubleshooting skills, communication, and ability to solve technical problems in real-world environments.'
     ],
     tags: ['IT Support', 'Troubleshooting', 'Hardware', 'Communication']
+  },
+  {
+    title: 'Hockey Linesman / Referee',
+    meta: 'Bow River Bruins Minor Hockey Association · 2014 – 2015 · Calgary, AB',
+    details: [
+      'Officiated Novice and Atom hockey games as a linesman/referee, applying game rules, conflict resolution, and on-ice communication skills.'
+    ],
+    tags: ['Leadership', 'Officiating', 'Communication']
   }
 ];
