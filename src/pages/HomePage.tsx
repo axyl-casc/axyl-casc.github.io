@@ -9,7 +9,7 @@ import { getTagHue } from '../utils/tagColors';
 export function HomePage() {
   return (
     <main id="main-content" className="site-main space-y-16" tabIndex={-1}>
-<Section title="About Me">
+<Section id="about-me" title="About Me">
   <div className="card bg-base-200 shadow-md">
     <div className="card-body space-y-4">
       <p>
@@ -44,7 +44,7 @@ export function HomePage() {
   </div>
 </Section>
 
-<Section title="Technical Skills">
+<Section id="technical-skills" title="Technical Skills">
   <div className="card bg-base-200 shadow-md">
     <div className="card-body space-y-4">
       <p>
@@ -106,7 +106,7 @@ export function HomePage() {
   </div>
 </Section>
 
-<Section title="Projects">
+<Section id="projects" title="Projects">
   <div className="card bg-base-200 shadow-md">
     <div className="card-body space-y-4">
       <p>
@@ -121,7 +121,7 @@ export function HomePage() {
     </div>
   </div>
 </Section>
-<Section title="Experience">
+<Section id="experience" title="Experience">
   <div className="card bg-base-200 shadow-md">
     <div className="card-body space-y-6">
       <p>
@@ -165,7 +165,7 @@ export function HomePage() {
 
       <hr className="border-neutral-300" />
 
-<Section title="Hobbies">
+<Section id="hobbies" title="Hobbies">
   <div className="card bg-base-200 shadow-md">
     <div className="card-body space-y-4">
       <p>
