@@ -14,9 +14,13 @@ export function CardGrid({
   return (
     <div className={grid ? 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6' : 'space-y-6'}>
       {items.map((item) => (
-        <a key={item.href} href={item.href} className={`card content-card transition-all duration-200 ${cardClassName}`.trim()}>
+        <div key={item.href} className={`card content-card transition-all duration-200 ${cardClassName}`.trim()}>
           <div className="card-body">
-            <h3 className="card-title text-primary">{item.title}</h3>
+            <h3 className="card-title text-primary">
+              <a href={item.href} className="hover:opacity-80 transition-opacity">
+                {item.title}
+              </a>
+            </h3>
             <p className="text-base-content/80">{item.description}</p>
             {item.tags && item.tags.length > 0 && (
               <div className="card-actions pt-2">
@@ -33,7 +37,7 @@ export function CardGrid({
               </div>
             )}
           </div>
-        </a>
+        </div>
       ))}
     </div>
   );
