@@ -101,6 +101,15 @@
     box-shadow: var(--tw-shadow);
   }
 
+  .other-project-card {
+    background-color: #fff;
+    backdrop-filter: none;
+  }
+
+  :root[data-theme='dark'] .other-project-card {
+    background-color: #000;
+  }
+
 
   .card-link-overlay {
     @apply absolute inset-0 rounded-2xl;
