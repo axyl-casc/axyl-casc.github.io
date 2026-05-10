@@ -192,19 +192,12 @@ export function HomePage() {
           'C',
           'Python',
           'React',
-          'Node.js',
+          'NodeJS',
           'Electron',
           'Tailwind CSS',
           'SQL',
-          'MySQL',
           'JavaScript',
-          'Java',
-          'Git',
-          'Linux',
-          'Assembly',
-          'Matplotlib',
-          'NumPy',
-          'SymPy'
+          'Java'
         ].map((tag) => (
           <a
             key={tag}

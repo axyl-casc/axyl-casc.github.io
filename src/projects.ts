@@ -23,7 +23,7 @@ export const projects: Project[] = [
     description: 'A GO playing interface designed to teach beginners how to play the game of GO.',
     projectUrl: 'https://zxnashx.itch.io/beginner-go-game',
     section: 'featured',
-    tags: ['Go / Baduk', 'Game Development', 'Education', 'Python', 'JavaScript', 'NodeJS']
+    tags: ['Go / Baduk', 'Game Development', 'Education', 'Python', 'JavaScript', 'NodeJS', 'Electron', 'Tailwind CSS']
   },
   {
     slug: 'fancy-pants-outfitters-react-demo',
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     description: 'A polished React storefront demo featuring curated fashion for trendsetters, workweek looks, and night-out fits. Highlights include in-stock essentials, modern silhouettes, and standout accessories for individuals, partners, and the whole crew.',
     projectUrl: 'https://acare3.github.io/4513_2_website/',
     section: 'featured',
-    tags: ['React', 'Frontend', 'E-commerce', 'TypeScript', 'JavaScript']
+    tags: ['React', 'Frontend', 'E-commerce', 'TypeScript', 'JavaScript', 'Tailwind CSS']
   },
   {
     slug: 'defender-remake-atari-st',
@@ -55,7 +55,8 @@ export const projects: Project[] = [
     description: 'Run different CPU scheduling algorithms interactively and view the results afterwards.',
     projectUrl: 'https://axyl-casc.github.io/Scheduler-Designer/',
     section: 'other',
-    tags: ['Algorithms', 'Visualization', 'Education']
+    tags: ['Algorithms', 'Visualization', 'Education', 'Tailwind CSS'
+    ]
   },
   {
     slug: 'airplane-package-scheduler',
@@ -79,7 +80,8 @@ export const projects: Project[] = [
     description: 'Guess the next best move in a Go game.',
     projectUrl: 'https://goguesser.onrender.com/',
     section: 'other',
-    tags: ['Go / Baduk', 'Puzzle', 'Web App']
+    tags: ['Go / Baduk', 'Puzzle', 'Web App', 'NodeJS', 'Tailwind CSS'
+    ]
   },
   {
     slug: 'dice-simulator',
