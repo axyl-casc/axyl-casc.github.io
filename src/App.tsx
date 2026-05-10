@@ -16,6 +16,9 @@ function App() {
   });
 
 
+  const [pathname, setPathname] = useState(() => window.location.pathname);
+
+
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const redirectedPath = params.get('p');
@@ -26,6 +29,7 @@ function App() {
 
     const decodedPath = decodeURIComponent(redirectedPath);
     window.history.replaceState(null, '', decodedPath);
+    setPathname(window.location.pathname);
   }, []);
 
   useEffect(() => {
@@ -64,11 +68,21 @@ function App() {
     return () => {
       window.removeEventListener('hashchange', scrollToHashTarget);
     };
-  }, [window.location.pathname]);
+  }, [pathname]);
+
+
+  useEffect(() => {
+    const updatePathname = () => setPathname(window.location.pathname);
+    window.addEventListener('popstate', updatePathname);
+
+    return () => {
+      window.removeEventListener('popstate', updatePathname);
+    };
+  }, []);
 
 
   const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
-  const path = window.location.pathname;
+  const path = pathname;
   const normalizedPath = basePath && path.startsWith(basePath)
     ? path.slice(basePath.length) || '/'
     : path;
