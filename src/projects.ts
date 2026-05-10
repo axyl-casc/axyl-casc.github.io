@@ -91,6 +91,15 @@ export const projects: Project[] = [
     section: 'other',
     tags: ['Probability', 'Simulation', 'Visualization', 'Software Development']
   },
+
+  {
+    slug: 'axyl-casc-portfolio-website',
+    title: 'axyl-casc.github.io (Portfolio Website)',
+    description: 'The source repository for this portfolio website, built with React, TypeScript, and Tailwind CSS.',
+    projectUrl: 'https://github.com/axyl-casc/axyl-casc.github.io',
+    section: 'other',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Portfolio', 'Web Development', 'Software Development']
+  },
   {
     slug: 'go-library',
     title: 'Go Library',
