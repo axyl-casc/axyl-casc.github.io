@@ -4,7 +4,7 @@
 
 @layer components {
   .site-header {
-    @apply bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-700 text-white p-8 rounded-b-lg shadow-lg;
+    @apply bg-primary text-primary-content p-8 rounded-b-lg shadow-lg;
   }
 
   .site-main {
@@ -12,10 +12,10 @@
   }
 
   .site-footer {
-    @apply bg-gray-900 text-white p-4 mt-8 text-center;
+    @apply bg-neutral text-neutral-content p-4 mt-8 text-center;
   }
 
   .project-card {
-    @apply block p-4 bg-white rounded border border-gray-300 shadow hover:bg-gray-100 hover:border-blue-600 transform hover:-translate-y-1 hover:shadow-lg transition;
+    @apply block p-4 bg-base-100 rounded border border-base-300 shadow hover:bg-base-200 hover:border-primary transform hover:-translate-y-1 hover:shadow-lg transition;
   }
 }
