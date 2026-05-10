@@ -14,7 +14,7 @@
   }
 
   .site-header {
-    @apply text-primary-content px-6 pt-8 pb-10 rounded-b-3xl shadow-xl;
+    @apply text-base-content px-6 pt-8 pb-10 rounded-b-3xl shadow-xl;
     background: linear-gradient(145deg, hsl(var(--p) / 0.94), hsl(var(--s) / 0.9));
   }
 
@@ -34,7 +34,7 @@
   }
 
   .header-subtitle {
-    @apply mt-4 text-base md:text-lg text-primary-content/90 max-w-3xl mx-auto;
+    @apply mt-4 text-base md:text-lg text-base-content/90 max-w-3xl mx-auto;
   }
 
   .header-nav {
@@ -42,7 +42,7 @@
   }
 
   .header-nav-link {
-    @apply px-4 py-2 rounded-full font-medium transition-all duration-200 border border-primary-content/20;
+    @apply px-4 py-2 rounded-full font-medium transition-all duration-200 border border-base-content/20;
     background-color: hsl(var(--b1) / 0.08);
   }
 
@@ -52,7 +52,7 @@
   }
 
   .header-social-link {
-    @apply w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200 border border-primary-content/20;
+    @apply w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200 border border-base-content/20;
     background-color: hsl(var(--b1) / 0.12);
   }
 
