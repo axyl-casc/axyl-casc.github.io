@@ -1,8 +1,10 @@
+import type { CSSProperties } from 'react';
 import { CardGrid } from '../components/CardGrid';
 import { Section } from '../components/Section';
 import { experienceItems } from '../experience';
 import { hobbies } from '../hobbies';
 import { featuredProjects } from '../projectsCards';
+import { getTagHue } from '../utils/tagColors';
 
 export function HomePage() {
   return (
@@ -145,11 +147,9 @@ export function HomePage() {
                     key={tag}
                     className={[
                       'badge',
-                      index === 0 ? 'badge-primary' : '',
-                      index === 1 ? 'badge-secondary' : '',
-                      index === 2 ? 'badge-accent' : '',
-                      index > 2 ? 'badge-outline' : ''
+                      'tag-badge'
                     ].join(' ').trim()}
+                    style={{ '--tag-hue': getTagHue(`${item.title}-${index}-${tag}`) } as CSSProperties}
                   >
                     {tag}
                   </div>
