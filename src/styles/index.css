@@ -89,7 +89,7 @@
     backdrop-filter: blur(6px);
   }
 
-  .content-card:hover {
+  a.content-card:hover {
     @apply shadow-xl;
     border-color: hsl(var(--p) / 0.35);
     outline: none;
