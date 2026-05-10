@@ -261,7 +261,7 @@ export function HomePage() {
     </div>
   </div>
 </Section>
-<Section id="experience" title="Experience" description="Professional and teaching experience with a focus on communication and delivery.">
+<Section id="experience" title="Work Experience" description="Professional and teaching experience with a focus on communication and delivery.">
   <div className="card content-card">
     <div className="card-body space-y-6">
       <p>

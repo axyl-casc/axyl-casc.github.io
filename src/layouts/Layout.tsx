@@ -14,7 +14,7 @@ const homeLinks = [
   { label: 'About me', href: '#about-me' },
   { label: 'Technical Skills', href: '#technical-skills' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Experience', href: '#experience' },
+  { label: 'Work Experience', href: '#experience' },
   { label: 'Education', href: '#education' },
   { label: 'Hobbies', href: '#hobbies' },
   { label: 'GitHub', href: 'https://github.com/axyl-casc' },
